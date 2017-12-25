@@ -1,0 +1,102 @@
+<!DOCTYPE html> <html lang="en"> <head>     <meta charset="UTF-8"/>
+<title>弹出</title>     <meta name="viewport" content="width=device-width,user-
+scalable=no,initial-scale=1,maximum-scale=1" />     <script
+type="text/javascript" src="js/jquery.min.js"></script> </head> <body>
+<script>     $(".activity_alertbg").css("height",$(window).height());
+</script> <style>     #activityshare_alert{         /* display:none; */
+z-index:310;         position:fixed;         top:72.5px;         width:69.5%;
+height:258px;         left:15%;         background-
+image:url(img/buy_suc_alert_pic.png);         background-repeat:no-repeat;
+background-size:100%;         vertical-align:middle;     }
+#activityshare_alertbg{         width: 100%;         margin-top: 20%;     }
+#activityshare_alert img{         width: 50%;         top: 40%;     }
+.activityshare_view,.activityshare_goshare{         display: inline-block;
+text-align: center;         width: 49.7%;         background-color: #ff9108;
+font-size: 12px;         color: #fff;         height: 27px;         padding-
+top: 10px;     }     .activityshare_button{         position: absolute;
+margin-top: 73%;         width: 100%;         background-color: red;
+height: 37px;         border-radius: 0px 0px 8px 8px;     }
+.activityshare_view{         border-radius: 0px 0px 0px 8px;         float:
+left;     }     .activityshare_goshare{         float: right;         border-
+radius: 0px 0px 8px 0px;     }     .activityshare_alertbg{         background-
+color:#000000;         display:none;         z-index:300;         opacity:0.8;
+position:fixed;         top:0px;         width:100%;         height:100%;
+}     .alertMain{         position: fixed;         /* top: 10%; */
+width: 70%;         background-color: #eeeeee;         left: 15%;max-width: 640px;     }
+.input_content{         overflow: auto;         font-size: 14px;
+color: #666666;         text-align: left;         line-height: 25px;
+box-sizing:boder-box;         padding: 10px;     }     .noticeScroll{
+position: absolute;         width: 50%;         left: 25%;         text-align:
+center;          display: none;     }     .noticeScroll div{         padding:
+5px 10px;         font-size: 12px;         color: #ffffff;
+background:rgba(0,0,0,0.7);         border-radius: 20px;
+		
+	}
+	.alertMainButton1{
+		width: 85%;
+		margin:auto;
+		margin-top: 15px;
+		margin-bottom: 20px;
+		border-radius: 20px;
+		background-color: #e40001;
+		color: #ffffff;
+		text-align: center;
+		font-size: 14px;
+		padding: 10px 0px;
+	}
+	.alertMainTitle{
+		text-align: center;
+		font-size: 16px;
+		color: #666666;
+		line-height: 60px;
+		border-bottom: 1px #9a9898 solid;
+	}
+</style>
+	<div class="alertMain">
+		<div class="alertMainTitle">
+			弹出框title
+		</div>
+		<div class="input_content" align="center">
+			：“夫揭竿累，趣灌渎，守鲵鲋，其于得大鱼难矣；饰小说以干县令，其于大达亦远矣。”“县”乃古“悬”字，高也；“令”，美也，“干”，追求。是说举着细小的钓竿钓绳，奔走于灌溉用的沟渠之间，只能钓到泥鳅之类的小鱼，而想获得大鱼可就难了。靠修饰琐屑的言论以求高名美誉，那和玄妙的大道相比，可就差得远了。春秋战国时，学派林立，百家争鸣，许多学人策士为说服王侯接受其思想学说，往往设譬取喻，征引史往往设譬取喻，征引史
+		</div>
+		<div class="alertMainButton1">
+			领取
+		</div>
+		<div class="noticeScroll">
+			<div>使用说明&dArr;</div>
+		</div>
+	</div>	
+	<script>
+		init();
+		function init(){
+			windowsHeight = $(window).height()*0.8-$(".alertMainButton1").outerHeight() - $(".alertMainTitle").outerHeight();
+			var buttonOuterHeight = $(".alertMainButton1").outerHeight() + 20
+			var noticeScrollHeight = $(".noticeScroll").outerHeight();
+			$(".noticeScroll").css({"bottom":buttonOuterHeight + noticeScrollHeight + "px"})
+			
+			$(".input_content").css({"max-height":windowsHeight});
+
+			var divOuterHeight = $(".input_content").outerHeight(true)
+			var divHeight = $(".input_content").height()-20;
+			var divMaxHeight = parseFloat($(".input_content").css("max-height"))
+			var divScrollHeight = $(".input_content").get(0).scrollHeight
+			$(".input_content").scroll(function(){
+				var divScrollTop = $(".input_content").scrollTop();
+				if(divScrollTop == (divScrollHeight - divOuterHeight)){
+					//$(".noticeScroll").hide();
+					$(".noticeScroll div").html("TOP&uArr;");
+				}else if(divScrollTop == 0){
+					//$(".noticeScroll").show();
+					$(".noticeScroll div").html("使用说明&dArr;");
+				}
+			})
+
+			if(divScrollHeight > divOuterHeight){
+				$(".noticeScroll").show();
+			}
+			var divTop = ($(window).height() - $(".alertMain").outerHeight())*0.5;
+			$(".alertMain").css({"top":divTop+"px"})
+		}
+	</script>
+</body>
+</html>

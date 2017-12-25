@@ -1,0 +1,178 @@
+.float_l{
+	float: left;
+}
+.float_r{
+	float: right;
+}
+.clear{
+	clear: both;
+}
+.line_heng{
+	width: 100%;
+}
+.line_heng img{
+	width: 100%;
+}
+body{
+	margin: 0px;
+}
+.banner{
+	width: 100%;
+}
+.banner img{
+	width: 100%;
+	display: block;
+}
+/*输入手机号领抢货红包样式 begin*/
+.phone_num{
+	width: 100%;
+	margin: 20px 0px;
+	position: relative;
+}
+.phone_num img{
+	width: 100%;
+	display: block;
+}
+.shuru{
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	bottom: 28%;
+}
+.shuru input{
+	text-align: center;
+	background-color: #fff;
+	border: 0px;
+	border-radius: 20px;
+	padding: 6px;
+	width: 42.2%;
+	font-size: 12px;
+	color: #999999;
+}
+.lingqu_button{
+	width: 100%;
+	position: absolute;
+	bottom: 10%;
+}
+.lingqu_button .button{
+	width: 23.3%;
+	font-size: 13px;
+	color: #fff;
+	background-color: #cd031e;
+	padding: 8px 20px;
+	border-radius: 20px;
+}
+/*输入手机号领抢货红包样式 end*/
+/*朋友正在抢样式 begin*/
+.top_goods{
+	background-color: #db0f25;
+	width: 100%;
+	padding: 12.5px 0px;
+}
+.top_goods_pic{
+	width: 40%;
+	margin: auto;
+	background-color: #fff;
+	padding: 5px 3px;
+	position: relative;
+}
+.top_goods_pic img{
+	width: 97.5%;
+	display: block;
+	margin: auto;
+}
+.top_goods_price{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	display: inline-block;
+	border-radius: 11px 0px 0px 0px;
+	background-color: #ff2a07;
+	color: #fff;
+	padding: 4px 5px;
+	font-size: 12px;
+}
+.friendsisqiang{
+	width: 59.4%;
+	margin: auto;
+}
+.friendsisqiang img{
+	width: 100%;
+}
+/*朋友正在抢样式 end*/
+/*朋友已领取begin*/
+.friendshasling{
+	width: 100%;
+	margin: 15px 0px;
+}
+.friendshasling img{
+	width: 100%;
+}
+.lingqu_detail{
+	width: 90%;
+	margin: auto;
+	margin-top: 10px;
+	overflow: hidden;
+}
+.lingqu_detail .lingqu_pic{
+	width: 10.119%;
+	margin-right: 3%;
+}
+.lingqu_detail .lingqu_pic img{
+	width: 100%;
+	border-radius: 50%;
+}
+.lingqu_num_time_status{
+	width: 86%;
+}
+.lingqu_num{
+	color: #5d5d5d;
+	font-size: 12px;
+}
+.lingqu_time_status{
+	color: #666666;
+	font-size: 12px;
+}
+.lingqu_price{
+	color: #eb1d2f;
+	font-size: 12px;
+}
+.lingqu_price span{
+	font-size: 13.5px;
+}
+/*朋友已领取end*/
+/*底部商品区域样式 begin*/
+.hongbaocanbuygoods{
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom:3px;
+}
+.hongbaocanbuygoods img{
+	width: 100%;
+}
+#bottom_goods{
+	padding:0px 5%;
+}
+.bottom_goods_detail{
+	width: 43%;
+	margin: 4px 0px;
+	height: 225px;
+}
+.bottom_goods_detail .goods_detail_pic{
+	width: 100%;
+}
+.bottom_goods_detail .goods_detail_pic img{
+	width: 100%;
+}
+.goods_detail_title{
+	font-size: 12px;
+	color: #707070;
+	line-height: 17px;
+	word-wrap: break-word;
+}
+.goods_detail_price{
+	color: #f8564c;
+	font-size: 13px;
+	line-height: 19px;
+}
+/*底部商品区域样式 end*/
